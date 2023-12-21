@@ -7,7 +7,7 @@ Chrome Extension that suggests Spotify playlist names by scraping data on the sc
 
 ## How to Use
 1. Download the files
-2. Replace "YOUR_API_KEY_HERE" with your own OpenAI API key.
+2. In contentScript.js, replace "YOUR_API_KEY_HERE" with your own OpenAI API key.
     * To get your own OpenAI API key, check out https://platform.openai.com/
 3. Unpack files
     * Go to chrome://extensions/
