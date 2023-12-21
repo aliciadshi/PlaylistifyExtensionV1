@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Playlistify",
+    "version": "1.0",
+    "description": "Suggest playlist names with OpenAI",
+    "permissions": ["activeTab", "scripting"], 
+    "host_permissions": ["<all_urls>"],
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["contentScript.js"]
+    }]
+  }
