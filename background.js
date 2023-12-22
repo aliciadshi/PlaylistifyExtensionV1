@@ -1,14 +1,9 @@
-try {
-    chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
-        console.log("tab status")
-        console.log(changeInfo.status)
-        if(changeInfo.status == 'complete') {
-            chrome.scripting.executeScript({
-                files: ['contentScript.js'],
-                target: {tabId: tab.id}
-            })
-        }
-    }) 
-} catch(e) {
-    console.log(e)
-}
+chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
+    console.log("tab status")
+    console.log(changeInfo.status)
+
+    chrome.scripting.executeScript({
+        target: {tabId: tab.id},
+        files: ['contentScript.js'],
+    })
+})

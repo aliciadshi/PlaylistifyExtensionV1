@@ -3,7 +3,7 @@
 ## Description
 Chrome Extension that suggests Spotify playlist names by scraping data on the screen and using OpenAI.
 
-![Demo Photo](./PlaylistifyExtensionV1Demo.png)
+![Demo GIF](./PlaylistifyExtensionV1.1Demo.gif)
 
 ## How to Use
 1. Download the files
